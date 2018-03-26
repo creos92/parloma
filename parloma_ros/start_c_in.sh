@@ -1,7 +1,7 @@
 #!/bin/bash
 source ./devel/setup.bash
-sed -i "s/indirizzoipserver/"$IP"/g" ../Client/certificati/client_in/client.conf
-chmod +rx start_play.sh /Client/certificati/client_in/start_client.sh &&
+sed -i "s/indirizzoipserver/"$IP"/g" ../Client/client_in/client.conf
+chmod +rx start_play.sh /Client/client_in/start_client.sh &&
 cd /Client/certificati/client_in && sync && ./start_client.sh &
 sleep 3s
 export ROS_IP=$(/sbin/ifconfig | grep "inet addr:10.8" |awk -F: '{print $2}' | awk '{print $1}')
