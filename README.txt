@@ -2,7 +2,7 @@ Da linea di comando:
 Lato server:
 su root 
 svn checkout https://github.com/creos92/parloma.git/trunk/DockerfileServer
-cd Dockerfile_Server/
+cd DockerfileServer/
 docker build . -t parloma:server
 docker-compose up
 
