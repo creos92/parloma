@@ -9,7 +9,7 @@ RUN \
  wget https://swupdate.openvpn.org/community/releases/openvpn-2.4.4.tar.gz &&\
  sudo tar zxvf openvpn-2.4.4.tar.gz &&\
  cd openvpn-2.4.4 && ./configure && make && checkinstall -y &&\
- /bin/bash -c "source /opt/ros/indigo/setup.bash \
- cd /parloma_ros && catkin_make"
+/bin/bash -c 'source /opt/ros/indigo/setup.bash && \
+ cd /parloma_ros && catkin_make'
  
 CMD cd parloma_ros && chmod +rx start_c_in.sh && sync && ./start_c_in.sh
