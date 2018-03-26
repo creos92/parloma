@@ -1,5 +1,5 @@
-parloma_client:
-  image: parloma:client
+parloma_client_in:
+  image: parloma:client_in
   stdin_open: true
   tty: true
   privileged: true
