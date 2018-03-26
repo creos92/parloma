@@ -18,8 +18,8 @@ docker-compose run -e IP=34.244.15.238 parloma_client_in
 OUTPUT MODULE:
 su root
 svn checkout https://github.com/creos92/parloma.git/trunk/Dockerfile_Client_Output
-cd Dockerfile_Client_Out/
-docker build -t parloma:client_out
+cd Dockerfile_Client_Output/
+docker build . -t parloma:client_out
 docker-compose run -e IP=34.244.15.238 parloma_client_out
 
 
