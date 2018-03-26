@@ -1,7 +1,7 @@
 #!/bin/bash
 source ./devel/setup.bash
 chmod +rx ./start_talker.sh /Server/server/start_server.sh &&
-cd /Server/certificati/server && sync && ./start_server.sh &
+cd /Server/server && sync && ./start_server.sh &
 sleep 1s
 roscore &
 sleep 2s
