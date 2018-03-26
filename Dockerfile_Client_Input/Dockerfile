@@ -12,4 +12,4 @@ RUN \
  /bin/bash -c "source /opt/ros/indigo/setup.bash \
  cd /ros_parloma && catkin_make"
  
-CMD cd ros_parloma && chmod +rx start_c_in.sh && sync && ./start_c_in.sh
+CMD cd parloma_ros && chmod +rx start_c_in.sh && sync && ./start_c_in.sh
